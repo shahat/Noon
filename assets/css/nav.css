@@ -1,0 +1,142 @@
+* {
+  font-family: "Open Sans", sans-serif;
+}
+#header {
+  justify-content: space-between;
+  background-color: #feee00;
+  min-height: 70px;
+  height: 10vh;
+  align-items: center;
+}
+
+#header-logo,
+#header-search,
+#header-btns {
+  padding: 10px;
+}
+#header-logo a {
+  text-decoration: none;
+  display: block;
+  width: min-content;
+  margin-top: 10px;
+  margin-left: 20px;
+}
+
+#header-logo a img {
+  width: 100px;
+}
+#header-search div {
+  position: relative;
+  height: min-content;
+  overflow: hidden;
+  border-radius: 10px;
+  height: 40px;
+  top: 5px;
+}
+#header-search div input {
+  height: 40px;
+  width: calc(100% - 35px);
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: 10px;
+  border: 1px solid #fff;
+  padding: 5px;
+  font-size: 16px;
+  padding-left: 20px;
+  border-bottom-right-radius: 0;
+  border-top-right-radius: 0;
+}
+#header-search div input:focus {
+  outline-width: 0px;
+}
+#header-search div span {
+  z-index: 99;
+  position: absolute;
+  right: 0;
+  width: 40px;
+  border-radius: 10px;
+  border-bottom-left-radius: 0;
+  border-top-left-radius: 0;
+  height: 40px;
+  top: 0;
+  background-color: #404553;
+  cursor: pointer;
+}
+#header-search div span svg {
+  width: 100%;
+  fill: #fff;
+  display: block;
+  margin-top: 12px;
+}
+#header-btns .grid {
+  height: min-content;
+  margin-top: 6px;
+  justify-content: end;
+  padding-right: 50px;
+}
+/* #header-btns .grid div {
+  border-right: 1px solid #404553;
+}
+#header-btns .grid div:nth-last-child(1) {
+  border-right: 0px solid #404553;
+} */
+#header-btns .grid a {
+  height: 40px;
+  display: block;
+  width: 80%;
+  margin-inline: auto;
+  line-height: 40px;
+  position: relative;
+  text-align: center;
+  font-size: 18px;
+  font-weight: 100;
+  text-decoration: none;
+  color: #404553;
+}
+#header-btns .grid a span {
+  position: absolute;
+  right: -4px;
+  top: 5px;
+  height: 30px;
+  width: 30px;
+}
+#header-btns .grid div#cart-counter,
+#header-btns .grid #wishlist-counter {
+  display: inline-block;
+  position: absolute;
+  top: 2px;
+  right: 5px;
+  width: 18px;
+  text-align: center;
+  align-items: center;
+  height: 18px;
+  padding: 3px;
+  font-size: 12px;
+  background-color: transparent;
+  border-radius: 50%;
+  color: #fff;
+  background-color: #404553;
+}
+#header-btns .grid a span svg {
+  width: 100%;
+  height: 100%;
+}
+#header-btns .grid a:hover {
+  color: #404553aa;
+}
+.text {
+  font-size: 16px;
+  margin-right: 25px;
+}
+@media only screen and (max-width: 1000px) {
+  .text {
+    visibility: hidden;
+  }
+}
+@media only screen and (max-width: 1120px) {
+  .text {
+    margin-right: 20px;
+    font-size: 13px;
+  }
+}

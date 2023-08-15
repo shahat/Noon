@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Signup</title>
+
+  <!-- Fontawesome CDN Link For Icons -->
+  <link rel="stylesheet" href="registerStyle.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="./assets/css/regester.css">
+  <link rel="stylesheet" href="./assets/css/login.css">
+
+</head>
+
+<body>
+  <div class="background-holder">
+    <div class="overLayer">
+      <form action="./index.html" onsubmit="setUserData()">
+        <h2>Register</h2>
+        <p>if you do have an account <a href="login.html">Login</a></p>
+        <div class="form-group fullname">
+          <label for="fullname">Full Name</label>
+          <input type="text" id="fullname" placeholder="Enter your full name" />
+        </div>
+        <div class="form-group email">
+          <label for="email">Email Address</label>
+          <input type="text" id="email" placeholder="Enter your email address" />
+        </div>
+        <div class="form-group password">
+          <label for="password">Password</label>
+          <input type="password" id="password" placeholder="Enter your password" />
+          <i id="pass-toggle-btn" class="fa-solid fa-eye"></i>
+        </div>
+
+        <div class="form-group gender">
+          <label for="gender">Gender</label>
+          <select id="gender">
+            <option value="" selected disabled>Select your gender</option>
+            <option value="Male">Male</option>
+            <option value="Female">Female</option>
+          </select>
+        </div>
+        <div class="checkbox">
+          <label for="termsAndConditions">Agree to terms and condition</label>
+          <input type="checkbox" id="termsAndConditions" value="subscribe" required
+            oninvalid="setCustomValidity('Agree to terms and conditions to be able to proceed')"
+            oninput="setCustomValidity('')" />
+        </div>
+
+        <div class="form-group submit-btn">
+          <input type="submit" value="Signup" id="submitBtn" />
+        </div>
+      </form>
+    </div>
+  </div>
+  <script src="./assets/js/regester.js"></script>
+</body>
+
+</html>

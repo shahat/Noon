@@ -1,0 +1,143 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Open Sans", sans-serif;
+}
+
+form {
+  padding: 50px;
+  background: transparent;
+  max-width: 500px;
+  width: 100%;
+  border-radius: 7px;
+  color: #f9f0f1;
+
+  /* box-shadow: 0 10px 15px rgba(0, 0, 0, 0.05); */
+  margin-block: 30px;
+  border: 1px solid #feee00bb;
+}
+
+form h2 {
+  font-size: 27px;
+  text-align: center;
+  margin: 0px 0 30px;
+}
+form h5 {
+  font-size: 27px;
+  text-align: center;
+  margin: 0px 0 30px;
+}
+form p {
+  text-align: center;
+  margin-bottom: 15px;
+  font-size: 20px;
+}
+form p a {
+  text-decoration: none;
+  color: orange;
+}
+form p a:hover {
+  cursor: pointer;
+}
+form .form-group {
+  margin-bottom: 15px;
+  position: relative;
+}
+
+form label {
+  display: block;
+  font-size: 15px;
+  margin-bottom: 7px;
+}
+
+form input,
+form select {
+  height: 45px;
+  padding: 10px;
+  width: 100%;
+  font-size: 15px;
+  outline: none;
+  background: transparent;
+  color: rgb(255, 255, 255);
+  border-radius: 3px;
+
+  border: 1px solid #bfbfbf;
+}
+form select {
+  color: black;
+  background-color: #bfbfbf;
+}
+
+input::placeholder {
+  color: rgb(230, 230, 230);
+}
+
+form input:focus,
+form select:focus {
+  border-color: #9a9a9a;
+}
+
+form input.error,
+form select.error {
+  border-color: #f91919;
+  background: transparent;
+}
+
+form small {
+  font-size: 14px;
+  margin-top: 5px;
+  display: block;
+  color: #f91919;
+}
+
+form .password i {
+  position: absolute;
+  right: 0px;
+  height: 45px;
+  top: 28px;
+  font-size: 13px;
+  line-height: 45px;
+  width: 45px;
+  cursor: pointer;
+  color: #939393;
+  text-align: center;
+}
+
+.checkbox {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 30px;
+}
+.checkbox input {
+  width: 10%;
+  height: 15px;
+}
+
+.submit-btn {
+  margin-top: 30px;
+}
+
+.submit-btn input {
+  background-color: transparent;
+  color: rgb(255, 255, 255);
+  border: none;
+  height: auto;
+  font-size: 16px;
+  padding: 13px 0;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: 500;
+  text-align: center;
+  background: orange;
+  transition: 0.3s ease;
+  /* border: 1px solid #feee00; */
+}
+
+.submit-btn input:hover {
+  background: #ebdb00;
+  /* color: #feee00; */
+}

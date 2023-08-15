@@ -1,0 +1,99 @@
+.footer {
+  /* height: 300px; */
+  width: 100%;
+  background-color: rgb(0, 0, 0);
+  display: flex;
+  justify-content: space-evenly;
+  padding-bottom: 15px;
+}
+
+.footerSection {
+  /* display: flex; */
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: start;
+}
+
+.footerSection > h1 {
+  text-align: center;
+  /* background-color: #fff; */
+  display: flex;
+  /* width: 130px; */
+  justify-content: center;
+}
+
+.footerSection ul li {
+  list-style: none;
+  width: 120px;
+  height: 40px;
+  cursor: pointer;
+  text-align: center;
+  /* margin: 5px; */
+}
+
+.socialMediaIconsList li {
+  list-style: none;
+  width: 120px;
+  height: 40px;
+  cursor: pointer;
+  text-align: center;
+}
+
+li {
+  display: flex;
+  justify-content: center;
+}
+
+.fa-facebook-f {
+  background-color: yellow;
+  width: 30px;
+  height: 30px;
+  margin: 5px;
+  color: rgb(64, 69, 83);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.fa-facebook-f:hover {
+  background-color: #1877f2;
+  color: white;
+  cursor: pointer;
+}
+.fa-twitter {
+  background-color: yellow;
+  width: 30px;
+  height: 30px;
+  margin: 5px;
+  color: white;
+  color: rgb(64, 69, 83);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.fa-twitter:hover {
+  background-color: #1da1f2;
+  color: white;
+
+  cursor: pointer;
+}
+
+.fa-youtube {
+  background-color: yellow;
+  width: 30px;
+  height: 30px;
+  margin: 5px;
+  color: rgb(64, 69, 83);
+
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.fa-youtube:hover {
+  background-color: #ff0000;
+  color: white;
+  cursor: pointer;
+}
