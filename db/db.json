@@ -2,7 +2,6 @@
   "products": [
     {
       "id": 1,
-
       "count": 1,
       "title": "iPhone 9",
       "description": "An apple mobile which is nothing like apple",
@@ -23,7 +22,6 @@
     },
     {
       "id": 2,
-
       "count": 1,
       "title": "iPhone X",
       "description": "SIM-Free, Model A19211 6.5-inch Super Retina HD display with OLED technology A12 Bionic chip with ...",
@@ -63,7 +61,6 @@
     },
     {
       "id": 4,
-
       "count": 1,
       "title": "OPPOF19",
       "description": "OPPO F19 is officially announced on April 2021.",
@@ -144,7 +141,6 @@
     },
     {
       "id": 8,
-
       "count": 1,
       "title": "Microsoft Surface Laptop 4",
       "description": "Style and speed. Stand out on HD video calls backed by Studio Mics. Capture ideas on the vibrant touchscreen.",

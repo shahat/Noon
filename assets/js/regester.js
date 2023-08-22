@@ -11,7 +11,6 @@ const showError = (field, errorText) => {
   errorElement.innerText = errorText;
   field.closest(".form-group").appendChild(errorElement);
 };
-
 // Function to handle form submission
 const handleFormData = (e) => {
   e.preventDefault();

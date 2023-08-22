@@ -1,5 +1,4 @@
 /* ==================== Global variable ==================== */
-
 const categoriesItems = [
   {
     name: "smartphones",
@@ -40,9 +39,7 @@ const cartCounter = document.getElementById("cart-counter");
 cartCounter.innerText = cart.length;
 const wishListCounter = document.getElementById("wishlist-counter");
 wishListCounter.innerText = wishList.length;
-
 /* ==================== make category Element  ==================== */
-
 for (let i = 0; i < categoriesItems.length; i++) {
   let createdElement = document.createElement("div");
   let elmentName = document.createElement("span");
@@ -57,7 +54,6 @@ for (let i = 0; i < categoriesItems.length; i++) {
 }
 
 /* ==================== Get categories ==================== */
-
 function getCategory() {
   clickedCategory = this.id;
   fetch("http://localhost:3000/products?category=" + clickedCategory)
@@ -75,7 +71,7 @@ function getCategory() {
 
 function createProducts() {
   productsContainer.innerHTML = ""; // Clear previous products before adding new ones
-  console.log(products.length);
+  // console.log(products.length);
   if (products && products.length > 0) {
     for (let k = 0; k < products.length; k++) {
       let product = document.createElement("div");
@@ -95,9 +91,7 @@ function createProducts() {
             <span href="#"><i id="${
               products[k].id
             }" class="fa fa-heart" onClick="addToWishList(this)"></i></span>
-            <span ><i id="${
-              products[k].id
-            }" class="fa fa-shopping-cart" onclick="addToCart(this)"></i></span>
+            <span ><i id="${products[k].id}" class="fa fa-shopping-cart" onclick="addToCart(this)"></i></span>
           </div>
         </div>
       </div>
@@ -137,13 +131,11 @@ function addToWishList(e) {
 /* ==================== search filteration function ==================== */
 
 function getproduct() {
-  console.log("hellow world");
   const inputValue = document.getElementById("search").value;
   fetch(`http://localhost:3000/products`)
     .then((response) => response.json())
     .then((data) => {
-      const productsData = [...data];
-      products = productsData.filter((product) => {
+      products =[...data].filter((product) => {
         return product.title.toLowerCase().includes(inputValue.toLowerCase());
       });
       createProducts();
@@ -167,6 +159,7 @@ function displayProducts() {
     });
   otherSlideFunc();
 }
+
 /* ==================== Hero section slider ==================== */
 
 var ourimages = [];
@@ -270,7 +263,6 @@ function otherSlideFunc() {
     }
   };
 }
-
 function leftscroll() {
   othersProductSlider.scrollLeft -= 630;
 }

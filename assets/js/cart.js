@@ -1,3 +1,6 @@
+let currantwishList = JSON.parse(localStorage.getItem("wishList"))
+  ? JSON.parse(localStorage.getItem("wishList"))
+  : [];
 let currantCart = JSON.parse(localStorage.getItem("cart"))
   ? JSON.parse(localStorage.getItem("cart"))
   : [];
@@ -6,6 +9,8 @@ let currantCart = JSON.parse(localStorage.getItem("cart"))
 
 const cartCounter = document.getElementById("cart-counter");
 cartCounter.innerText = currantCart.length;
+const wishListCounter = document.getElementById("wishlist-counter");
+wishListCounter.innerText = currantwishList.length;
 
 console.log(currantCart);
 
