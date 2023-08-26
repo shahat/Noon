@@ -88,6 +88,19 @@
   margin: auto;
 }
 
+/* procuct  */
+.product-card-heart,
+.product-card-shopping {
+  font-size: 1.5rem;
+  padding-left: 10px;
+  transition: color 0.5s;
+}
+.product-card-heart:hover,
+.product-card-shopping:hover {
+  color: orange;
+  cursor: pointer;
+}
+
 /* Handle case when no products are available */
 #productsContainer {
   display: flex;

@@ -84,14 +84,16 @@ function createProducts() {
         <h4><a href="./product.html?id=${products[k].id}">${
         products[k].title
       }</a></h4>
-        <p>${products[k].description.slice(1, 30)}</p>
+        <p>${products[k].description.slice(0, 30)}</p>
         <div class="product-bottom-details">
           <div class="product-price">${products[k].price} $</div>
           <div class="product-links">
             <span href="#"><i id="${
               products[k].id
-            }" class="fa fa-heart" onClick="addToWishList(this)"></i></span>
-            <span ><i id="${products[k].id}" class="fa fa-shopping-cart" onclick="addToCart(this)"></i></span>
+            }" class="fa fa-heart product-card-heart" onClick="addToWishList(this)"></i></span>
+            <span ><i id="${
+              products[k].id
+            }" class="fa fa-shopping-cart product-card-shopping" onclick="addToCart(this)"></i></span>
           </div>
         </div>
       </div>
@@ -135,7 +137,7 @@ function getproduct() {
   fetch(`http://localhost:3000/products`)
     .then((response) => response.json())
     .then((data) => {
-      products =[...data].filter((product) => {
+      products = [...data].filter((product) => {
         return product.title.toLowerCase().includes(inputValue.toLowerCase());
       });
       createProducts();
