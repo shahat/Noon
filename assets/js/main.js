@@ -56,7 +56,9 @@ for (let i = 0; i < categoriesItems.length; i++) {
 /* ==================== Get categories ==================== */
 function getCategory() {
   clickedCategory = this.id;
-  fetch("http://localhost:3000/products?category=" + clickedCategory)
+  fetch(
+    "https://products-rica.onrender.com/products?category=" + clickedCategory
+  )
     .then((response) => response.json())
     .then((data) => {
       products = [...data];
@@ -134,7 +136,7 @@ function addToWishList(e) {
 
 function getproduct() {
   const inputValue = document.getElementById("search").value;
-  fetch(`http://localhost:3000/products`)
+  fetch(`https://products-rica.onrender.com/products`)
     .then((response) => response.json())
     .then((data) => {
       products = [...data].filter((product) => {
@@ -150,7 +152,7 @@ function getproduct() {
 /* ==================== display all products ==================== */
 
 function displayProducts() {
-  fetch("http://localhost:3000/products")
+  fetch("https://products-rica.onrender.com/products")
     .then((response) => response.json())
     .then((data) => {
       products = [...data];
@@ -239,7 +241,7 @@ var bodybtn =
 var productsData = [];
 function otherSlideFunc() {
   var reqObejct = new XMLHttpRequest();
-  reqObejct.open("GET", "http://localhost:3000/products", true);
+  reqObejct.open("GET", "https://products-rica.onrender.com/products", true);
   reqObejct.send();
   reqObejct.onreadystatechange = function () {
     if (reqObejct.readyState == 4 && reqObejct.status == 200) {
